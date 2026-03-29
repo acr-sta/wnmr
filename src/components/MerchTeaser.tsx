@@ -1,10 +1,23 @@
 'use client';
 
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 export default function MerchTeaser() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const handleScroll = () => {
+      if (!hasScrolled) setHasScrolled(true);
+    };
+    
+    el.addEventListener('scroll', handleScroll, { passive: true });
+    return () => el.removeEventListener('scroll', handleScroll);
+  }, [hasScrolled]);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -23,7 +36,7 @@ export default function MerchTeaser() {
   ];
 
   return (
-    <section className="py-24 overflow-hidden relative">
+    <section className="py-24 overflow-hidden relative border-b-4 border-white">
       <div className="absolute top-0 right-0 w-4 h-4 bg-primary hidden md:block m-4"></div>
       
       <div className="max-w-7xl mx-auto px-6 mb-16">
@@ -46,9 +59,18 @@ export default function MerchTeaser() {
       </div>
       
       <div className="relative group/slider">
+        {/* Mobile Scroll Indicator Overlay */}
+        <div 
+          className={`absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent md:hidden pointer-events-none transition-opacity duration-700 z-10 flex items-center justify-end pr-4 ${hasScrolled ? 'opacity-0' : 'opacity-100'}`}
+        >
+          <div className="bg-primary text-black rounded-full w-12 h-12 flex items-center justify-center shadow-[0_0_15px_rgba(248,151,29,0.5)] animate-bounce-x">
+            <span className="material-symbols-outlined text-2xl">swipe_left</span>
+          </div>
+        </div>
+
         <div 
           ref={scrollRef}
-          className="flex gap-12 overflow-x-auto overflow-y-hidden px-6 md:px-[calc((100vw-80rem)/2+1.5rem)] pb-12 pt-8 snap-x scrollbar-hide scroll-smooth"
+          className="flex gap-12 overflow-x-auto overflow-y-hidden px-6 xl:px-[calc((100vw-80rem)/2+1.5rem)] pb-12 pt-8 snap-x scrollbar-hide scroll-smooth"
         >
           {products.map((product) => (
             <div 

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function EventCalendar() {
   return (
-    <section className="py-24 bg-surface-container border-y-4 border-white relative overflow-hidden">
+    <section className="py-24 bg-surface-container border-b-4 border-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10 pointer-events-none">
         <Image 
           src="/images/team.jpg" 
@@ -24,7 +24,7 @@ export default function EventCalendar() {
             </div>
             <div className="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
-                <h3 className="font-headline font-black text-2xl uppercase italic">THE CONCRETE SESSION</h3>
+                <h3 className="font-headline font-black text-2xl uppercase italic">NÄCHSTES EVENT</h3>
                 <p className="font-body text-white/70">LINE-UP: TBA</p>
               </div>
               <button disabled className="border-2 border-white/30 text-white/30 px-6 py-2 font-headline font-black uppercase text-xs cursor-not-allowed transition-colors relative overflow-hidden group/btn">

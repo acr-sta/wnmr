@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function MembershipSection() {
   return (
-    <section id="mitgliedschaft" className="py-24 px-6 relative bg-primary text-black border-y-4 border-white overflow-hidden">
+    <section id="mitgliedschaft" className="py-24 px-6 relative bg-primary text-black border-b-4 border-white overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-8 h-8 bg-black m-4"></div>
       <div className="absolute bottom-0 left-0 w-8 h-8 bg-white m-4"></div>

@@ -22,7 +22,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
       </head>
-      <body className={`bg-background text-on-surface font-body selection:bg-primary selection:text-on-primary-fixed overflow-x-hidden antialiased`}>
+      <body className={`bg-background text-on-surface font-body selection:bg-primary selection:text-black overflow-x-hidden antialiased flex flex-col min-h-screen`}>
         <div className="fixed inset-0 grain-overlay z-[100]"></div>
         
         <header className="fixed top-0 w-full z-50 flex justify-between items-center px-6 h-20 bg-background border-b-4 border-white shadow-[4px_4px_0px_0px_rgba(255,150,30,1)]">
@@ -56,9 +56,11 @@ export default function RootLayout({
           </Link>
         </header>
 
-        {children}
+        <div className="flex-grow flex flex-col pb-20">
+          {children}
+        </div>
 
-        <footer className="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-background border-t-4 border-white mt-20 relative overflow-hidden">
+        <footer className="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-8 bg-background border-t-4 border-white mt-auto relative overflow-hidden">
           <div className="absolute top-0 right-0 w-4 h-4 bg-primary m-4"></div>
           <div className="flex flex-col items-center md:items-start gap-2 z-10">
             <span className="text-xl font-black text-white font-headline uppercase italic">dann mit Kultur</span>
@@ -69,8 +71,8 @@ export default function RootLayout({
             </span>
           </div>
           <div className="flex gap-8 items-center flex-wrap justify-center z-10">
-            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://instagram.com">+ INSTAGRAM</Link>
-            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://youtube.com">+ YOUTUBE</Link>
+            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://www.instagram.com/wenn_nicht_mit_rap/" target="_blank" rel="noopener noreferrer">+ INSTAGRAM</Link>
+            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://www.youtube.com/@WNMRDMNP" target="_blank" rel="noopener noreferrer">+ YOUTUBE</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://open.spotify.com/playlist/60ZoteapNvRywdnLmTlix7?si=60ca5d084bc44c6f" target="_blank" rel="noopener noreferrer">+ SPOTIFY</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="/kontakt">+ KONTAKT</Link>
           </div>

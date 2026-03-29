@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[921px] flex items-center justify-center overflow-hidden py-24 px-6 border-b-4 border-white">
+    <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden py-24 px-6 border-b-4 border-white">
       <div className="absolute inset-0 z-0">
         <Image 
           src="/images/team.jpg" 

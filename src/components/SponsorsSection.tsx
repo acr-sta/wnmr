@@ -8,7 +8,7 @@ export default function SponsorsSection() {
   ];
 
   return (
-    <section className="py-20 border-t-4 border-white bg-surface-container relative overflow-hidden">
+    <section className="py-20 border-b-4 border-white bg-surface-container relative overflow-hidden">
       {/* Decorative grain background specific to this section to make it pop subtly */}
       <div className="absolute inset-0 bg-black/50 z-0"></div>
       

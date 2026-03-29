@@ -27,13 +27,10 @@ export default function KontaktPage() {
             </p>
             {/* Schutz vor Scrapern: Wir nutzen ein Link mit Obfuskierung per CSS/HTML oder einfach plain Text */}
             <div className="inline-block bg-black border-2 border-white px-6 py-3 font-headline font-black text-xl hover:bg-primary hover:text-black transition-colors cursor-pointer select-all">
-              <span className="unicode-bidi-override direction-rtl">
+              <span style={{ direction: 'rtl', unicodeBidi: 'bidi-override' }}>
                 ta.rmnw@eciffo
               </span>
             </div>
-            <style dangerouslySetContent={{__html: `
-              .direction-rtl { direction: rtl; unicode-bidi: bidi-override; }
-            `}} />
           </div>
 
           <div className="bg-surface-container border-4 border-white p-8 relative group hover:border-primary transition-colors">
