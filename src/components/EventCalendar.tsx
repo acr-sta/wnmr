@@ -27,8 +27,9 @@ export default function EventCalendar() {
                 <h3 className="font-headline font-black text-2xl uppercase italic">THE CONCRETE SESSION</h3>
                 <p className="font-body text-white/70">LINE-UP: TBA</p>
               </div>
-              <button className="border-2 border-white px-6 py-2 font-headline font-black uppercase text-xs hover:bg-white hover:text-black transition-colors">
-                TICKETS SICHERN
+              <button disabled className="border-2 border-white/30 text-white/30 px-6 py-2 font-headline font-black uppercase text-xs cursor-not-allowed transition-colors relative overflow-hidden group/btn">
+                <span className="relative z-10">DEMNÄCHST VERFÜGBAR</span>
+                <div className="absolute inset-0 bg-repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(255,255,255,0.05)_10px,rgba(255,255,255,0.05)_20px)"></div>
               </button>
             </div>
           </div>
