@@ -19,7 +19,7 @@ export default function EventCalendar() {
         <div className="space-y-4">
           <div className="group flex flex-col md:flex-row items-stretch bg-background border-4 border-white hover:border-primary transition-colors">
             <div className="bg-primary text-black p-6 flex flex-col items-center justify-center min-w-[160px]">
-              <span className="font-headline font-black text-3xl">24.03.</span>
+              <span className="font-headline font-black text-3xl">TBA</span>
               <span className="font-label font-bold tracking-widest">WIEN</span>
             </div>
             <div className="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
