@@ -6,6 +6,10 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'WNMR | DANN MIT KULTUR',
   description: 'Wenn nicht mit Rap, dann mit Kultur. Hip-Hop Kulturverein aus Wien.',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
@@ -67,7 +71,7 @@ export default function RootLayout({
           <div className="flex gap-8 items-center flex-wrap justify-center z-10">
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://instagram.com">+ INSTAGRAM</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://youtube.com">+ YOUTUBE</Link>
-            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://spotify.com">+ SPOTIFY</Link>
+            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://open.spotify.com/playlist/60ZoteapNvRywdnLmTlix7?si=60ca5d084bc44c6f" target="_blank" rel="noopener noreferrer">+ SPOTIFY</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="/network">+ KONTAKT</Link>
           </div>
         </footer>
