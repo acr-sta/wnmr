@@ -19,6 +19,18 @@
 
 # production
 /build
+/WNMR_Assets
+/von alter Homepage
+
+# large media files
+public/images/WNMR_BG_Herde_O.jpg
+public/images/WNMR_BG_Herde_SO.jpg
+public/images/WNMR_BG_Herde_SW.jpg
+public/images/WNMR_Elefant_7Jahre.jpg
+public/images/wnmr_C_25_cover_fin.jpg
+public/logos/sponsors/grieskirchner_logo_BLACK.eps
+public/logos/wnmr_logo_fallback.jpg
+public/videos/visuals.mp4
 
 # misc
 .DS_Store

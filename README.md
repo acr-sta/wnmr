@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# dann mit Kultur (ehemals WNMR)
 
-## Getting Started
+## Beschreibung
+Webapplikation für den Wiener Hip-Hop Kulturverein "dann mit Kultur".
+Das Design ist rau, authentisch, an der Straße orientiert (Graffiti, Stencil, Neon-Orange, Schwarz, harte Kontraste), aber technisch hochmodern und blitzschnell.
 
-First, run the development server:
+## Historie
+Der Verein startete ursprünglich unter dem Namen "Wenn nicht mit Rap" (WNMR) – ein Wortspiel aus einer Haftbefehl-Line ("Wenn nicht mit Rap, dann mit der Pumpgun"). Er hat sich seitdem zum Kulturverein "dann mit Kultur" entwickelt.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Gründer
+Gegründet von den Szene-Urgesteinen:
+- Astin
+- Sanno
+- Zaza
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech-Stack
+- Next.js 15 (App Router)
+- React
+- TypeScript
+- Tailwind CSS (v4)
+- Zustand (State Management)
+- Framer Motion (Animationen)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Ordnerstruktur
+- `src/app/` - Next.js App Router root
+  - `shop/` - Merch-Bereich (Shirts, Hoodies, Caps)
+  - `events/` - Auflistung der jährlichen Vereinsveranstaltungen
+  - `network/` - Künstler-Support, Roster
+  - `content/` - YouTube und Instagram Embeds
+- `src/components/` - Wiederverwendbare UI-Komponenten
+- `src/store/` - Zustand Store (z.B. für Cart)
