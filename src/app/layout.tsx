@@ -72,7 +72,7 @@ export default function RootLayout({
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://instagram.com">+ INSTAGRAM</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://youtube.com">+ YOUTUBE</Link>
             <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="https://open.spotify.com/playlist/60ZoteapNvRywdnLmTlix7?si=60ca5d084bc44c6f" target="_blank" rel="noopener noreferrer">+ SPOTIFY</Link>
-            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="/network">+ KONTAKT</Link>
+            <Link className="font-headline font-bold uppercase text-sm text-[#e2e2e2] hover:bg-primary hover:text-black p-1 transition-all" href="/kontakt">+ KONTAKT</Link>
           </div>
         </footer>
       </body>
