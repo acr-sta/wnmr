@@ -32,7 +32,7 @@ export default function MerchTeaser() {
             <span className="text-primary">+</span> KOLLEKTION
           </h2>
           <div className="flex flex-col items-end gap-4">
-            <p className="font-label text-primary font-bold">NEUER DROP 001</p>
+            <p className="font-label text-primary font-bold">NEUER DROP {new Date().getFullYear()}</p>
             <div className="hidden md:flex gap-2">
               <button onClick={() => scroll('left')} className="bg-surface-container border-2 border-white p-2 hover:bg-primary hover:text-black transition-colors">
                 <span className="material-symbols-outlined">chevron_left</span>
