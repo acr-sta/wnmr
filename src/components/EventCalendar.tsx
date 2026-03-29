@@ -25,7 +25,7 @@ export default function EventCalendar() {
             <div className="flex-grow p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h3 className="font-headline font-black text-2xl uppercase italic">THE CONCRETE SESSION</h3>
-                <p className="font-body text-white/70">LINE-UP: SKOFI, WIENZEILE, PHÖÖNIX</p>
+                <p className="font-body text-white/70">LINE-UP: TBA</p>
               </div>
               <button className="border-2 border-white px-6 py-2 font-headline font-black uppercase text-xs hover:bg-white hover:text-black transition-colors">
                 TICKETS SICHERN
